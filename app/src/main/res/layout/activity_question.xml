@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionActivity"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/questionID"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:textColor="#363A43"
+                android:textSize="22sp"
+                android:text="Kojoj državi pripada ova zastava?"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:src="@drawable/niger"
+                android:id="@+id/imageID"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressID"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <ProgressBar
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:max="10"
+                    android:id="@+id/progressBarID"
+                    android:minHeight="50dp"
+                    android:progress="0"
+                    android:indeterminate="false"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressTextID"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="0/10"
+                    android:textColorHint="#7A8089"
+                    android:textSize="14sp"
+                    />
+
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/optionOneID"
+            android:layout_margin="7dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#7A8089"
+            android:textSize="18sp"
+            android:text="Jamajka"
+            android:background="@drawable/default_border"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/optionTwoID"
+            android:layout_margin="7dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#7A8089"
+            android:textSize="18sp"
+            android:text="Urugvaj"
+            android:background="@drawable/default_border"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/optionThreeID"
+            android:layout_margin="7dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#7A8089"
+            android:textSize="18sp"
+            android:text="Srbija"
+            android:background="@drawable/default_border"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/optionFourID"
+            android:layout_margin="7dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#7A8089"
+            android:textSize="18sp"
+            android:text="Senegal"
+            android:background="@drawable/default_border"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/submitID"
+            android:text="POTVRDI"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="15dp"
+            style="bold"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
